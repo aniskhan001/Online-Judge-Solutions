@@ -19,7 +19,7 @@ int main(){
             point = 0; new_dang.clear();
             while(point < sqrt_check){
                 for(k=point; k<dang.size(); k+=sqrt_check){
-                    string dang_child(1, dang[k]);
+                    string dang_child(1, dang[k]); // converting a single character to a string
                     new_dang.append(dang_child);
                 }
                 point++;
