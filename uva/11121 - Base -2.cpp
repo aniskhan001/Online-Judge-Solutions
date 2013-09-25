@@ -25,8 +25,8 @@ string baseMinus2(long n){
             res.append("0");
             n /= -2;
         }
-        else if(n == -1){
-            res.append("11");
+        else if(n == -1){ // The special case need to notice
+            res.append("11"); // apend 11 if there is a negative remainder
             n = 0;
         }
         else{
@@ -38,7 +38,7 @@ string baseMinus2(long n){
     return rev(res);
 }
 
-string rev(string dang){
+string rev(string dang){ // generated string from baseMinus2 need to be reversed
     int len=dang.size()-1, k;
     string reversed;
     for(k=len; k>=0; k--){
