@@ -1,3 +1,5 @@
+/// This is a straight-forward KMP (Knuth-Morris-Pratt) solution.
+
 #include <bits/stdc++.h>
 using namespace std;
 
